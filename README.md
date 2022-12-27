@@ -1,2 +1,2 @@
-# traffic_anomaly_detection
+# AttackDetect
 Modern Deep Learning model implementation for TimeSeries Anomaly Detection
