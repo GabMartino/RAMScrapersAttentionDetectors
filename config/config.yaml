@@ -1,0 +1,52 @@
+
+
+modelTesting: False
+
+
+logConfig:
+  project: ""
+  entity: ""
+
+
+onlinelog: False
+
+datasets:
+  pos:
+    seq_len: 10
+    n_features_per_elem: 13
+    normal_data_path: ./Datasets/POSTransaction/10/BenignBiFlows
+    abnormal_data_path: ./Datasets/POSTransaction/10/MalignBiFlows
+
+    dns_normal_data_path: ./Datasets/POSTransaction/10/only_dns_benign
+    dns_abnormal_data_path: ./Datasets/POSTransaction/10/dns_only_malign
+
+    https_normal_data_path: ./Datasets/POSTransaction/10/https_only_benign
+    https_abnormal_data_path: ./Datasets/POSTransaction/10/https_only_malign
+
+find_lr: False
+learning_rate: 8e-4
+max_epochs: 300
+batch_size: 128
+fromCheckpoint: False
+
+train: True
+
+
+model: transformer
+
+
+lstm_ae:
+  encoder_decoder_units: 2
+  hidden_size_smaller_unit: 128
+  bidirectional: True
+
+lstm_ae_attention:
+  encoder_decoder_units: 2
+  hidden_size_smaller_unit: 128
+  attention_type: luong # bahdanau / luong
+  attention_score_function: general_score # dot_score / general_score / concat_score / latte_score ####only if luong is selected
+
+transformer:
+  dim_model: 8
+  num_heads: 4
+  depth: 6
