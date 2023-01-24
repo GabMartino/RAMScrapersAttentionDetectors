@@ -4,7 +4,6 @@ title: RAMScrapersAttentionDetectors
 authors:
   - family-names: Martino
     given-names: Gabriele
-  - name: "SecureB2C"
 version: 0.1.0
 date-released: "2023-01-24"
 license: Apache-2.0
