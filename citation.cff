@@ -5,7 +5,7 @@ authors:
   - family-names: Martino
     given-names: Gabriele
   - name: "SecureB2C"
-version: 0.11.2
+version: 0.1.0
 date-released: "2023-01-24"
 license: Apache-2.0
 repository-code: "https://github.com/GabMartino/RAMScrapersAttentionDetectors"
